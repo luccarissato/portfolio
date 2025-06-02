@@ -1,0 +1,147 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo e fundo */
+body {
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to bottom, #141e30, #243b55);
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* Header */
+header {
+  text-align: center;
+  background-color: #485563;
+  color: white;
+  padding: 20px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: transform 0.3s, text-shadow 0.3s;
+}
+
+nav a:hover {
+  transform: scale(1.1) translateY(-3px);
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Conteúdo principal */
+main {
+  padding: 20px;
+  min-height: 70vh;
+}
+
+/* Títulos e textos */
+main h2, main p {
+  color: white;
+}
+
+/* Grid para página inicial */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  color: black;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* Flex para página de projetos */
+.projetos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.projeto {
+  background-color: white;
+  color: black;
+  padding: 15px;
+  flex: 1 1 300px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #485563;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* ===== Formulário de contato ===== */
+form#contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 20px auto;
+  gap: 15px;
+}
+
+form#contact-form input,
+form#contact-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1f2d3d;
+  color: white;
+  font-size: 1rem;
+}
+
+form#contact-form input::placeholder,
+form#contact-form textarea::placeholder {
+  color: #ccc;
+}
+
+form#contact-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form#contact-form button:hover {
+  background-color: #45a049;
+}
+
+/* Status da mensagem */
+#status {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
