@@ -1,30 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Sobre Mim - Meu Site</title>
-    <link rel="stylesheet" href="estilo.css">
+  <meta charset="UTF-8">
+  <title>Sobre Mim - Meu Site</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script src="script.js" defer></script> <!-- Script JS externo -->
 </head>
-<body>
 
-<header>
+<body>
+  <button id="theme-toggle" aria-label="Alternar tema">🌙</button>
+
+  <header>
     <h1>Sobre mim</h1>
     <nav>
-        <a href="index.html">Início</a>
-        <a href="sobre.html">Sobre Mim</a>
-        <a href="projetos.html">Projetos</a>
-        <a href="contato.html">Contato</a>
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre Mim</a>
+      <a href="projetos.html">Projetos</a>
     </nav>
-</header>
+  </header>
 
-<main>
+  <main>
     <h2>Sobre Mim</h2>
-    <p>Olá! Eu sou [Seu Nome]. Aqui você pode escrever um pouco sobre você, sua trajetória, seus interesses, suas habilidades e o que te motiva.</p>
-</main>
 
-<footer>
+    <div class="sobre-linha">
+      <div class="sobre-card">
+        <h3>Trajetória</h3>
+        <p>
+          Olá! Meu nome é <strong>Lucca</strong>, tenho 20 anos e sou natural de <strong>Recife</strong>. Concluí o Ensino Médio em 2022 no
+          <strong>Colégio Madre de Deus</strong> e, logo após, embarquei em um <strong>intercâmbio cultural no Canadá</strong>. Em 2025, iniciei minha graduação em
+          <strong>Ciência da Computação</strong> na <strong>CESAR School</strong>, onde fui aprovado em <strong>3º lugar geral</strong> pelo ENEM.
+        </p>
+      </div>
+      <div class="sobre-img">
+        <img loading='lazy' data-src="imgs/lucca.jpg" alt="Foto de Lucca">
+      </div>
+    </div>
+
+    <div class="sobre-grid">
+      <div class="sobre-card">
+        <h3>Habilidades</h3>
+
+        <h4>Hard Skills</h4>
+        <ul>
+          <li>Lógica de programação</li>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Java, Python</li>
+          <li>Arduino</li>
+          <li>Inglês Avançado</li>
+        </ul>
+
+        <h4>Soft Skills</h4>
+        <ul>
+          <li>Comunicação interpessoal</li>
+          <li>Trabalho em equipe</li>
+          <li>Resolução de problemas</li>
+        </ul>
+      </div>
+
+      <div class="sobre-card">
+        <h3>Interesses</h3>
+        <p>
+          Sou curioso por <strong>tecnologia</strong>, <strong>Web Development</strong>, <strong>Game Development</strong> e <strong>Cyber Segurança</strong>. Além disso, gosto de explorar
+          <strong>música</strong>, <strong>idiomas</strong>, <strong>culturas diferentes</strong> e <strong>ler no tempo livre</strong>.
+        </p>
+      </div>
+
+      <div class="sobre-card">
+        <h3>Motivação</h3>
+        <p>
+          Me motiva a ideia de me aperfeiçoar na prática de programar, sempre buscando ser um profissional mais completo e <strong>sair da zona de conforto</strong>.
+          Busco <strong>aprender continuamente</strong> e <strong>impactar positivamente</strong> com o que desenvolvo.
+        </p>
+      </div>
+
+      <!-- Seção Contato -->
+      <div class="sobre-card">
+        <h3>Contato</h3>
+        <p>Você pode entrar em contato comigo pelos seguintes canais:</p>
+        <ul>
+          <li>Email: <a href="mailto:lucca@email.com">lucca@email.com</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/seu-perfil" target="_blank">linkedin.com/in/seu-perfil</a></li>
+          <li>GitHub: <a href="https://github.com/seu-usuario" target="_blank">github.com/seu-usuario</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
     <p>&copy; 2025 Meu Site</p>
-</footer>
-
+  </footer>
 </body>
 </html>
