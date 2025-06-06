@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Projetos - Meu Site</title>
-    <link rel="stylesheet" href="estilo.css">
+  <meta charset="UTF-8" />
+  <title>Projetos - Meu Site</title>
+  <link rel="stylesheet" href="estilo.css" />
+  <script src="script.js" defer></script>
 </head>
+
 <body>
+  <button id="theme-toggle" aria-label="Alternar tema">🌙</button>
 
-<header>
-    <h1>Meus projetos</h1>
+  <header>
+    <h1>Meus Projetos</h1>
     <nav>
-        <a href="index.html">Início</a>
-        <a href="sobre.html">Sobre Mim</a>
-        <a href="projetos.html">Projetos</a>
-        <a href="contato.html">Contato</a>
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre Mim</a>
+      <a href="projetos.html">Projetos</a>
     </nav>
-</header>
-
+  </header>
+  
 <main>
-    <h2>Meus Projetos</h2>
-    <div class="projetos">
-        <div class="projeto">
-            <h3>Projeto 1</h3>
-            <p>Descrição breve do projeto 1.</p>
-        </div>
-        <div class="projeto">
-            <h3>Projeto 2</h3>
-            <p>Descrição breve do projeto 2.</p>
-        </div>
-        <div class="projeto">
-            <h3>Projeto 3</h3>
-            <p>Descrição breve do projeto 3.</p>
-        </div>
-    </div>
+  <h2>Meus Projetos</h2>
+
+<div class="projeto">
+  <div class="projeto-texto">
+    <h3>Radar Marítimo</h3>
+    <p>
+      Radar Marítimo é uma versão automatizada e interativa do tradicional jogo <strong>Batalha Naval</strong>, transformada com a ajuda do
+      <strong>Arduino</strong> e programação em <strong>C++</strong>. O projeto visa tornar o jogo mais
+      <strong>acessível</strong> para pessoas com <strong>deficiência intelectual</strong> utilizando componentes como
+      <strong>botões, LEDs, buzzers e displays LCD I2C</strong>.
+    </p>
+  </div>
+  <div class="projeto-img">
+    <img loading="lazy" data-src="imgs/Radar-Marítimo.jpg" alt="Imagem do projeto Radar Marítimo" />
+  </div>
+</div>
 </main>
 
-<footer>
+  <footer>
     <p>&copy; 2025 Meu Site</p>
-</footer>
-
+  </footer>
 </body>
 </html>
