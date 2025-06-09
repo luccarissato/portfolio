@@ -23,6 +23,7 @@ Showcases my personal portfolio: a static website built with HTML, CSS, and Java
    git clone https://github.com/luccarissato/portfolio.git
    
 2. **Navigate** to the project directory:
-   ```cd portfolio
+   ```bash
+   cd portfolio
 
 4. **Open** index.html in your browser.
